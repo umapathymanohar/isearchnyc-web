@@ -1,0 +1,817 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="description" content="iSearchNYC">
+<meta name="keywords" content="">
+<meta name="author" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>iSearchNYC</title>
+<!-- html5 support in IE8 and later -->
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<!-- CSS file links -->
+<link href="css/vendor/bootstrap.min.css" rel="stylesheet" media="screen">
+<link href="css/vendor/jquery.bxslider.css" rel="stylesheet" media="screen">
+<link href="css/isearchnyc.css" rel="stylesheet" type="text/css" media="all" />
+<link href="css/vendor/jquery.nouislider.min.css" rel="stylesheet" type="text/css" media="all" />
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:700' rel='stylesheet' type='text/css'>
+</head>
+
+<body id="index">
+
+<!-- Start Header -->
+<header class="navbar yamm navbar-default navbar-fixed-top">
+<div class="topBar">
+    <div class="container">
+        <div class="select">
+                            <select name="property type" id="propertyType" class="formDropdown">
+                                <option value="">Newyork</option>
+                                <option value="Family Home">Family Home</option>
+                                <option value="Apartment">Apartment</option>
+                                <option value="Condo">Condo</option>
+                                <option value="Villa">Villa</option>
+                            </select>
+                        </div>
+        <ul class="socialIcons">
+            <li class="topBarText"><a href="login.html">Sigin</a></li>
+            <li class="topBarText"><a href="register.html">Register (it's free)</a></li>
+        </ul>
+    </div>
+</div>
+<div class="container">
+   	<div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">ISEARCHNYC.COM </a>
+    </div>
+    <div class="navbar-collapse collapse">
+
+        <ul class="nav navbar-nav">
+            
+            <li class="dropdown menu-item-has-children">
+                <a href="sales.html">SALES</a>
+               
+            </li>
+            <li>
+                <a href="rentals.html">RENTALS</a>
+                </li>
+            <li>
+                <a href="agent.html">OUR AGENTS</a>
+                          </li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+            <li><a href="my_properties.html">MY PROPERTIES</a></li>
+            <li><a href="submit_property.html">SUBMIT PROPERTY</a></li>
+
+        </ul>        
+    </div><!--/.navbar-collapse -->
+</div><!-- end header container -->
+</header><!-- End Header -->
+
+<!-- start subheader -->
+<section class="sliderControls">
+    <div>
+        <span class="slider-prev"></span>
+        <span class="slider-next"></span>
+    </div>
+</section>
+
+<section class="subHeader home bxslider">
+    <div id="slide1">
+        <div class="container">
+            <div class="col-lg-6">
+                <h1><span>580</span> Main St</h1>
+                <div class="sliderTextBox">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam 
+                eu nisl et lectus tempor pretium pellentesque rhoncus nisl. Sed 
+                cursus ante eget orci lorem ipsum sodales.</p>
+                <a class="buttonGrey large" href="detail_property.html"><span class="icon-button-arrow"></span><span class="buttonText">VIEW DETAILS</span></a>
+                <span class="or">OR</span>
+                <a class="buttonColor" href="agent.html"><span class="icon-button-user"></span><span class="buttonText">CONTACT AGENT</span></a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-lg-offset-3"><h1 class="sliderPrice">$525,000</h1></div>
+        </div>
+    </div>
+    <div id="slide2">
+        <div class="container">
+            <div class="col-lg-6">
+                <h1><span>134</span> Smith Avenue</h1>
+                <div class="sliderTextBox">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam 
+                eu nisl et lectus tempor pretium pellentesque rhoncus nisl. Sed 
+                cursus ante eget orci lorem ipsum sodales.</p>
+                <a class="buttonGrey large" href="detail_property.html"><span class="icon-button-arrow"></span><span class="buttonText">VIEW DETAILS</span></a>
+                <span class="or">OR</span>
+                <a class="buttonColor" href="agent.html"><span class="icon-button-user"></span><span class="buttonText">CONTACT AGENT</span></a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-lg-offset-3"><h1 class="sliderPrice">$85,000</h1></div>
+        </div>
+    </div>
+    <div id="slide3">
+        <div class="container">
+            <div class="col-lg-6">
+                <h1><span>834</span> Pratt Sreet</h1>
+                <div class="sliderTextBox">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam 
+                eu nisl et lectus tempor pretium pellentesque rhoncus nisl. Sed 
+                cursus ante eget orci lorem ipsum sodales.</p>
+                <a class="buttonGrey large" href="detail_property.html"><span class="icon-button-arrow"></span><span class="buttonText">VIEW DETAILS</span></a>
+                <span class="or">OR</span>
+                <a class="buttonColor" href="agent.html"><span class="icon-button-user"></span><span class="buttonText">CONTACT AGENT</span></a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-lg-offset-3"><h1 class="sliderPrice">$498,000</h1></div>
+        </div>
+    </div>
+</section>
+
+<!-- start horizontal filter -->
+<section class="filter">
+    <div class="container">
+        <div class="filterHeader">
+            <ul class="filterNav tabs">
+                <li><a class="current triangle" href="#tab1">SALES</a></li>
+                <li><a href="#tab2">RENTALS</a></li>
+                <li><a href="#tab3">BUILDINGS</a></li>
+                <li><a href="#tab4">RECORDED SALES</a></li>
+            </ul>
+        </div>
+        <div class="filterContent defaultTab" id="tab1">
+            <form method="post" action="#">
+                <div class="row">
+                    <div class="col-lg-4 col-md-4 col-sm-6">
+                        <div class="formBlock select">
+                        <label for="propertyType">Property Type</label><br/>
+                            <select name="property type" id="propertyType" class="formDropdown">
+                                <option value="">Any</option>
+                                <option value="Family Home">Family Home</option>
+                                <option value="Apartment">Apartment</option>
+                                <option value="Condo">Condo</option>
+                                <option value="Villa">Villa</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-6">
+                        <div class="formBlock select">
+                        <label for="location">Location</label><br/>
+                        <select name="location" id="location" class="formDropdown">
+                            <option value="">Any</option>
+                            <option value="Option 1">Option 1</option>
+                            <option value="Option 2">Option 2</option>
+                            <option value="Option 3">Option 3</option>
+                            <option value="Option 4">Option 4</option>
+                        </select>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-6">
+                        <div class="formBlock">
+                            <label for="price-min">Price Range</label><br/>
+                            <div style="float:right; margin-top:-25px;">
+                                <div class="priceInput"><input type="text" name="price min" id="price-min" class="priceInput" /></div>
+                                <span style="float:left; margin-right:10px; margin-left:10px;">-</span>
+                                <div class="priceInput"><input type="text" name="price max" id="price-max" class="priceInput" /></div>
+                            </div><br/>
+                            <div class="priceSlider"></div>
+                            <div class="priceSliderLabel"><span>0</span><span style="float:right;">800,000</span></div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-6">
+                        <div class="formBlock select">
+                        <label for="beds">Beds</label><br/>
+                        <select name="beds" id="beds" class="formDropdown">
+                            <option value="">Any</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                        </select>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-6">
+                        <div class="formBlock select">
+                        <label for="baths">Baths</label><br/>
+                        <select name="baths" id="baths" class="formDropdown">
+                            <option value="">Any</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                        </select>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-6">
+                        <div class="formBlock select">
+                        <label for="area">Area (Sq Ft)</label><br/>
+                        <select name="area" id="area" class="formDropdown">
+                            <option value="">Any</option>
+                            <option value="Option 1">Option 1</option>
+                            <option value="Option 2">Option 2</option>
+                            <option value="Option 3">Option 3</option>
+                            <option value="Option 4">Option 4</option>
+                        </select>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-6">
+                        <div class="formBlock">
+                            <input class="buttonColor" type="submit" value="FIND PROPERTIES" style="margin-top:24px;">
+                        </div>
+                    </div>
+                    <div style="clear:both;"></div>
+                </div>
+            </form>
+        </div><!-- END TAB1 -->
+        <div class="filterContent" id="tab2">
+            <p>Filter content for tab 2</p>
+             <form method="post" action="#">
+                <div class="row">
+                    <div class="col-lg-4 col-md-4 col-sm-6">
+                        <div class="formBlock select">
+                        <label for="propertyType2">Property Type</label><br/>
+                        <select name="property type" id="propertyType2" class="formDropdown">
+                            <option value="">Any</option>
+                            <option value="Family Home">Family Home</option>
+                            <option value="Apartment">Apartment</option>
+                            <option value="Condo">Condo</option>
+                            <option value="Villa">Villa</option>
+                        </select>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-6">
+                        <div class="formBlock select">
+                        <label for="location2">Location</label><br/>
+                        <select name="location" id="location2" class="formDropdown">
+                            <option value="">Any</option>
+                            <option value="Option 1">Option 1</option>
+                            <option value="Option 2">Option 2</option>
+                            <option value="Option 3">Option 3</option>
+                            <option value="Option 4">Option 4</option>
+                        </select>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-2 col-sm-3">
+                        <div class="formBlock select">
+                        <label for="priceMinDropDown">Min Price</label><br/>
+                        <select name="priceMinDropdown" id="priceMinDropDown" class="formDropdown">
+                            <option value="">Any</option>
+                            <option value="$100,000">$100,000</option>
+                            <option value="$200,000">$200,000</option>
+                            <option value="$300,000">$300,000</option>
+                            <option value="$400,000">$400,000</option>
+                            <option value="$500,000">$500,000</option>
+                            <option value="$600,000">$600,000</option>
+                            <option value="$800,000">$800,000</option>
+                            <option value="$900,000">$900,000</option>
+                        </select>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-2 col-sm-3">
+                        <div class="formBlock select">
+                        <label for="priceMaxDropdown">Max Price</label><br/>
+                        <select name="priceMaxDropdown" id="priceMaxDropdown" class="formDropdown">
+                            <option value="">Any</option>
+                            <option value="$200,000">$200,000</option>
+                            <option value="$300,000">$300,000</option>
+                            <option value="$400,000">$400,000</option>
+                            <option value="$500,000">$500,000</option>
+                            <option value="$600,000">$600,000</option>
+                            <option value="$700,000">$700,000</option>
+                            <option value="$900,000">$900,000</option>
+                            <option value="$1,000,000">$1,000,000</option>
+                        </select>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-6">
+                        <div class="formBlock select">
+                        <label for="beds2">Beds</label><br/>
+                        <select name="beds" id="beds2" class="formDropdown">
+                            <option value="">Any</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="4">5</option>
+                            <option value="4">6</option>
+                        </select>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-6">
+                        <div class="formBlock select">
+                        <label for="baths2">Baths</label><br/>
+                        <select name="baths" id="baths2" class="formDropdown">
+                            <option value="">Any</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="4">5</option>
+                            <option value="4">6</option>
+                        </select>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-6">
+                        <div class="formBlock select">
+                        <label for="area2">Area (Sq Ft)</label><br/>
+                        <select name="area" id="area2" class="formDropdown">
+                            <option value="">Any</option>
+                            <option value="Option 1">Option 1</option>
+                            <option value="Option 2">Option 2</option>
+                            <option value="Option 3">Option 3</option>
+                            <option value="Option 4">Option 4</option>
+                        </select>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-6">
+                        <div class="formBlock">
+                            <input class="buttonColor" type="submit" value="FIND PROPERTIES" style="margin-top:24px;">
+                        </div>
+                    </div>
+                    <div style="clear:both;"></div>
+                </div>
+            </form>
+        </div><!-- END TAB 2 -->
+        <div class="filterContent" id="tab3">
+            <p>Filter content for tab 3</p>
+             <form method="post" action="#">
+                <div class="row">
+                    <div class="col-lg-4 col-md-4 col-sm-6">
+                        <div class="formBlock select">
+                        <label for="propertyType3">Property Type</label><br/>
+                        <select name="property type" id="propertyType3" class="formDropdown">
+                            <option value="">Any</option>
+                            <option value="Family Home">Family Home</option>
+                            <option value="Apartment">Apartment</option>
+                            <option value="Condo">Condo</option>
+                            <option value="Villa">Villa</option>
+                        </select>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-6">
+                        <div class="formBlock select">
+                        <label for="location3">Location</label><br/>
+                        <select name="location" id="location3" class="formDropdown">
+                            <option value="">Any</option>
+                            <option value="Option 1">Option 1</option>
+                            <option value="Option 2">Option 2</option>
+                            <option value="Option 3">Option 3</option>
+                            <option value="Option 4">Option 4</option>
+                        </select>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-2 col-sm-3">
+                        <div class="formBlock select">
+                        <label for="priceMinDropDown2">Min Price</label><br/>
+                        <select name="priceMinDropdown" id="priceMinDropDown2" class="formDropdown">
+                            <option value="">Any</option>
+                            <option value="$100,000">$100,000</option>
+                            <option value="$200,000">$200,000</option>
+                            <option value="$300,000">$300,000</option>
+                            <option value="$400,000">$400,000</option>
+                            <option value="$500,000">$500,000</option>
+                            <option value="$600,000">$600,000</option>
+                            <option value="$800,000">$800,000</option>
+                            <option value="$900,000">$900,000</option>
+                        </select>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-2 col-sm-3">
+                        <div class="formBlock select">
+                        <label for="priceMaxDropdown2">Max Price</label><br/>
+                        <select name="priceMaxDropdown" id="priceMaxDropdown2" class="formDropdown">
+                            <option value="">Any</option>
+                            <option value="$200,000">$200,000</option>
+                            <option value="$300,000">$300,000</option>
+                            <option value="$400,000">$400,000</option>
+                            <option value="$500,000">$500,000</option>
+                            <option value="$600,000">$600,000</option>
+                            <option value="$700,000">$700,000</option>
+                            <option value="$900,000">$900,000</option>
+                            <option value="$1,000,000">$1,000,000</option>
+                        </select>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-6">
+                        <div class="formBlock select">
+                        <label for="beds3">Beds</label><br/>
+                        <select name="beds" id="beds3" class="formDropdown">
+                            <option value="">Any</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                        </select>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-6">
+                        <div class="formBlock select">
+                        <label for="baths3">Baths</label><br/>
+                        <select name="baths" id="baths3" class="formDropdown">
+                            <option value="">Any</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                        </select>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-6">
+                        <div class="formBlock select">
+                        <label for="area3">Area (Sq Ft)</label><br/>
+                        <select name="area" id="area3" class="formDropdown">
+                            <option value="">Any</option>
+                            <option value="Option 1">Option 1</option>
+                            <option value="Option 2">Option 2</option>
+                            <option value="Option 3">Option 3</option>
+                            <option value="Option 4">Option 4</option>
+                        </select>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-6">
+                        <div class="formBlock">
+                            <input class="buttonColor" type="submit" value="FIND PROPERTIES" style="margin-top:24px;">
+                        </div>
+                    </div>
+                    <div style="clear:both;"></div>
+                </div>
+            </form>
+        </div><!-- END TAB 3 -->
+    </div><!-- END CONTAINER -->
+</section>
+<!-- end horizontal filter -->
+
+<!-- start big message -->
+<section class="bigMessage">
+    <div class="container">
+        <h1>Easy, fast & <span>affordable</span> real estate.</h1><br/>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sit amet sagittis erat. Maecenas suscipit ut quam id condimentum. 
+        Pellentesque cursus lacinia sapien et laoreet. Ut mattis ultricies sem id elementum. Vestibulum blandit consectetur nibh.</p>
+    </div>
+</section>
+<!-- end big message -->
+
+<!-- start recent properties -->
+<section class="properties">
+    <div class="container">
+        <h3>RECENT PROPERTIES</h3>
+        <div class="divider"></div>
+        <div class="row">
+            <div class="col-lg-3 col-md-3 col-sm-6">
+                <div class="propertyItem">
+                    <div class="propertyContent">
+                        <a class="propertyType" href="#">FAMILY HOME</a>
+                        <a href="detail_property.html" class="propertyImgLink"><img class="propertyImg" src="images/768x507.gif" alt="" /></a>
+                        <h4><a href="detail_property.html">587 Smith Avenue</a></h4>
+                        <p>Baltimore, MD</p>
+                        <div class="divider thin"></div>
+                        <p class="forSale">FOR SALE</p>
+                        <p class="price">$687,000</p>
+                    </div>
+                    <table border="1" class="propertyDetails">
+                        <tr>
+                        <td><img src="images/icon-area.png" alt="" class="icon-info" />2,412m</td>
+                        <td><img src="images/icon-bed.png" alt="" class="icon-info" />6 Beds</td>
+                        <td><img src="images/icon-drop.png" alt="" class="icon-info" />3 Baths</td>
+                        </tr>
+                    </table> 
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-6">
+                <div class="propertyItem">
+                    <div class="propertyContent">
+                        <a class="propertyType" href="#">APARTMENT</a>
+                        <a href="detail_property.html" class="propertyImgLink"><img class="propertyImg" src="images/768x507.gif" alt="" /></a>
+                        <h4><a href="detail_property.html">587 Smith Avenue</a></h4>
+                        <p>Baltimore, MD</p>
+                        <div class="divider thin"></div>
+                        <p class="forSale">FOR RENT</p>
+                        <p class="price">$1,200/mo</p>
+                    </div>
+                    <table border="1" class="propertyDetails">
+                        <tr>
+                        <td><img src="images/icon-area.png" alt="" class="icon-info" />2,412m</td>
+                        <td><img src="images/icon-bed.png" alt="" class="icon-info" />6 Beds</td>
+                        <td><img src="images/icon-drop.png" alt="" class="icon-info" />3 Baths</td>
+                        </tr>
+                    </table> 
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-6">
+                <div class="propertyItem">
+                    <div class="propertyContent">
+                        <a class="propertyType" href="#">CONDO</a>
+                        <a href="detail_property.html" class="propertyImgLink"><img class="propertyImg" src="images/768x507.gif" alt="" /></a>
+                        <h4><a href="detail_property.html">587 Smith Avenue</a></h4>
+                        <p>Baltimore, MD</p>
+                        <div class="divider thin"></div>
+                        <p class="forSale">FOR SALE</p>
+                        <p class="price">$687,000</p>
+                    </div>
+                    <table border="1" class="propertyDetails">
+                        <tr>
+                        <td><img src="images/icon-area.png" alt="" class="icon-info" />2,412m</td>
+                        <td><img src="images/icon-bed.png" alt="" class="icon-info" />6 Beds</td>
+                        <td><img src="images/icon-drop.png" alt="" class="icon-info" />3 Baths</td>
+                        </tr>
+                    </table> 
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-6">
+                <div class="propertyItem">
+                    <div class="propertyContent">
+                        <a class="propertyType" href="#">VILLA</a>
+                        <a href="detail_property.html" class="propertyImgLink"><img class="propertyImg" src="images/768x507.gif" alt="" /></a>
+                        <h4><a href="detail_property.html">587 Smith Avenue</a></h4>
+                        <p>Baltimore, MD</p>
+                        <div class="divider thin"></div>
+                        <p class="forSale">FOR SALE</p>
+                        <p class="price">$687,000</p>
+                    </div>
+                    <table border="1" class="propertyDetails">
+                        <tr>
+                        <td><img src="images/icon-area.png" alt="" class="icon-info" />2,412m</td>
+                        <td><img src="images/icon-bed.png" alt="" class="icon-info" />6 Beds</td>
+                        <td><img src="images/icon-drop.png" alt="" class="icon-info" />3 Baths</td>
+                        </tr>
+                    </table> 
+                </div>
+            </div>
+        </div><!-- end row -->
+    </div><!-- end container -->
+</section>
+<!-- end recent properties -->
+
+<!-- start services section -->
+<section class="services">
+    <div class="container">
+        <h1>We make your life <span>easy</span>. Here’s how.</h1><br/><br/>
+        <div class="row">
+            <div class="col-lg-4 col-md-4 col-sm-4">
+                 <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIAAAACACAMAAAD04JH5AAAAA3NCSVQICAjb4U/gAAAACXBIWXMAABG3AAARtwGaY1MrAAAAGXRFWHRTb2Z0d2FyZQB3d3cuaW5rc2NhcGUub3Jnm+48GgAAAWhQTFRF////AgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICSx03nQAAAHd0Uk5TAAECBQYKDA0OExQYGhwdHyAhIycoKS4wMTU3ODo8PT4/QENIS01OUFFUVVdYWVpdXl9gY2RlZmdoamxtb3BxdXh6f4CEhoyOkJaXmJmdq7CytLW3uLy9wMHDxcbHyMrR19jb3t/h4uXn6Onq6+/y8/b3+fv8/f55f5NjAAAB/klEQVR42u3b90/CQBjH4RNnxb33woFaFUTcAycucG8R98Yt/fdNqyZCDOkdr73EfD+/9+5Jc9em5GAMIYQQQglT+ha2d3jzp5DN33qjieSnmt+pCTZJM3/2rShA6ycBDAnPr723UwAC+lBhr5unuS/BSxMBYF8fycV3jeP7HjxWJg8I6QOpggDtvkQyQLvMkwa4uzYEx9myACdlEUNwlCELwGqfDMFWmiwAa341BEGbLADriRqCZWkANva5F2alAdjMp2BcGoAtGYCoy3rAlWrUfWEIXlssB8T1XCcZoB1YCCj5DRCyEMB2ZAOUib3Qj071MQ6tBMSlWn4HAPgzQJFv2nRTjfSA4ijXd8EIOWCY78NkjRyQE+GZ/62Dfg2kt6mm68zFNgQAAAD+AFAzv2S6RTWVHFDB9y7wkQM4fzFbJQco5zzzPzjo14CtutF0DZnYhgAA8C8B9gLT5dvoARm7PE/CsypygIfvXRAkB9TzAWbp10DXyqbpNnxZ2IYAAAAAPcA+OGa60XJ6QOEL16PYQw4Y4XsXrJMD8p+4AG76NaD0DppuoBTbEAAAAAAAAAAAAAAAAP4JQORYb3wufYx9wYtFDjbH5Q3rYwQEAUkc7Y5tSBCQxOH2mG6Fj/c6aQBO8SUk+AeHmG5ak1nEQn/x+NH2Qp/CEEIIIZSwDy/XdSr0rssvAAAAAElFTkSuQmCC02249327681939a1fb33801a10318274"/><br/><br/>
+                <h4>COMPARABLE REPORTS</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing. 
+                In metus diam, fermentum in orci sit amet, lobortis 
+                congue diam. Interdum et malesuada fames ac ante 
+                ipsum primis in faucibus. </p>
+                <img class="serviceArrow" src="images/arrow.png" alt="" />
+               
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-4">
+                <img src="data:image/png;base64,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"/><br/><br/>
+                <h4>DISCUSSIONS</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing. 
+                In metus diam, fermentum in orci sit amet, lobortis 
+                congue diam. Interdum et malesuada fames ac ante 
+                ipsum primis in faucibus. </p>
+                <img class="serviceArrow" src="images/arrow.png" alt="" />
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-4">
+                <img src="data:image/png;base64,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"/><br/><br/>
+                <h4>OPEN HOUSE PLANNER</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing. 
+                In metus diam, fermentum in orci sit amet, lobortis 
+                congue diam. Interdum et malesuada fames ac ante 
+                ipsum primis in faucibus. </p>
+            </div>
+        </div><!-- end row -->
+    </div><!-- end container -->
+</section>
+<!-- end services section -->
+
+<!-- start open houses -->
+<section class="properties">
+    <div class="container">
+        <h3>TODAY'S OPEN HOUSES</h3>
+        <div class="divider"></div>
+        <div class="row">
+            <div class="col-lg-3 col-md-3 col-sm-6">
+                <div class="propertyItem">
+                    <div class="propertyContent">
+                        <a class="propertyType" href="#">FAMILY HOME</a>
+                        <a href="detail_property.html" class="propertyImgLink"><img class="propertyImg" src="images/768x507.gif" alt="" /></a>
+                        <h4><a href="detail_property.html">587 Smith Avenue</a></h4>
+                        <p>Baltimore, MD</p>
+                        <div class="divider thin"></div>
+                        <p class="forSale">FOR SALE</p>
+                        <p class="price">$687,000</p>
+                    </div>
+                    <table border="1" class="propertyDetails">
+                        <tr>
+                        <td><img src="images/icon-area.png" alt="" class="icon-info" />2,412m</td>
+                        <td><img src="images/icon-bed.png" alt="" class="icon-info" />6 Beds</td>
+                        <td><img src="images/icon-drop.png" alt="" class="icon-info" />3 Baths</td>
+                        </tr>
+                    </table> 
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-6">
+                <div class="propertyItem">
+                    <div class="propertyContent">
+                        <a class="propertyType" href="#">APARTMENT</a>
+                        <a href="detail_property.html" class="propertyImgLink"><img class="propertyImg" src="images/768x507.gif" alt="" /></a>
+                        <h4><a href="detail_property.html">587 Smith Avenue</a></h4>
+                        <p>Baltimore, MD</p>
+                        <div class="divider thin"></div>
+                        <p class="forSale">FOR RENT</p>
+                        <p class="price">$1,200/mo</p>
+                    </div>
+                    <table border="1" class="propertyDetails">
+                        <tr>
+                        <td><img src="images/icon-area.png" alt="" class="icon-info" />2,412m</td>
+                        <td><img src="images/icon-bed.png" alt="" class="icon-info" />6 Beds</td>
+                        <td><img src="images/icon-drop.png" alt="" class="icon-info" />3 Baths</td>
+                        </tr>
+                    </table> 
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-6">
+                <div class="propertyItem">
+                    <div class="propertyContent">
+                        <a class="propertyType" href="#">CONDO</a>
+                        <a href="detail_property.html" class="propertyImgLink"><img class="propertyImg" src="images/768x507.gif" alt="" /></a>
+                        <h4><a href="detail_property.html">587 Smith Avenue</a></h4>
+                        <p>Baltimore, MD</p>
+                        <div class="divider thin"></div>
+                        <p class="forSale">FOR SALE</p>
+                        <p class="price">$687,000</p>
+                    </div>
+                    <table border="1" class="propertyDetails">
+                        <tr>
+                        <td><img src="images/icon-area.png" alt="" class="icon-info" />2,412m</td>
+                        <td><img src="images/icon-bed.png" alt="" class="icon-info" />6 Beds</td>
+                        <td><img src="images/icon-drop.png" alt="" class="icon-info" />3 Baths</td>
+                        </tr>
+                    </table> 
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-6">
+                <div class="propertyItem">
+                    <div class="propertyContent">
+                        <a class="propertyType" href="#">VILLA</a>
+                        <a href="detail_property.html" class="propertyImgLink"><img class="propertyImg" src="images/768x507.gif" alt="" /></a>
+                        <h4><a href="detail_property.html">587 Smith Avenue</a></h4>
+                        <p>Baltimore, MD</p>
+                        <div class="divider thin"></div>
+                        <p class="forSale">FOR SALE</p>
+                        <p class="price">$687,000</p>
+                    </div>
+                    <table border="1" class="propertyDetails">
+                        <tr>
+                        <td><img src="images/icon-area.png" alt="" class="icon-info" />2,412m</td>
+                        <td><img src="images/icon-bed.png" alt="" class="icon-info" />6 Beds</td>
+                        <td><img src="images/icon-drop.png" alt="" class="icon-info" />3 Baths</td>
+                        </tr>
+                    </table> 
+                </div>
+            </div>
+        </div><!-- end row -->
+    </div><!-- end container -->
+</section>
+<!-- end open houses -->
+
+<!-- start widgets section -->
+<section class="genericSection">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-7">
+               <figure>
+                <img class="app-screen" src="images/isearch-app_02.png" alt="">
+               </figure>   
+            </div>
+            <div class="col-lg-5 appDetails">
+                <h4>ISEACRCHNYC.COM ON MOBILE </h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi 
+                vehicula dapibus mauris, quis ullamcorper enim aliquet sed. 
+                Maecenas eget tellus dui. Vivamus condimentum egestas nulla 
+                quis vehicula. Sed justo turpis, commodo sit amet.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi 
+                vehicula dapibus mauris, quis ullamcorper enim aliquet sed. 
+                Maecenas eget tellus dui. Vivamus condimentum egestas nulla 
+                quis vehicula. Sed justo turpis, commodo sit amet.</p>
+                <a href="https://play.google.com/store/apps/details?id=isearchnyc">
+                    <img alt="Get it on Google Play" src="https://developer.android.com/images/brand/en_generic_rgb_wo_45.png" />
+                </a>
+                <a href="#"><img src="images/app_store.svg" alt=""/></a>
+                </div>
+                
+            </div>
+        </div><!-- end row -->
+    </div><!-- end container -->
+</section>
+<!-- end widgets section -->
+
+
+
+<footer id="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 col-md-4 col-sm-6">
+                <h4>CONTACT</h4>
+                <ul class="contactList">
+                    <li><img class="icon" src="images/icon-pin.png" alt="" /> 123 Smith Drive, Arnold, Maryland</li>
+                    <li><img class="icon" src="images/icon-phone.png" alt="" /> +1 234 567 8901</li>
+                    <li><img class="icon" src="images/icon-mail.png" alt="" /> hello@isearchnyc.com</li>
+                </ul>
+            </div>
+           <div class="col-lg-4 col-md-4 col-sm-6">
+                <h4>TWITTER</h4>
+                <ul>
+                    <li><a href="#">@JohnDoe</a> Lorem ipsum dolor amet, 
+                    adipiscing elit. Maecenas eget tellus.<br><span>5 MINUTES AGO</span></li>
+                    <li><a href="#">@JohnDoe</a> Lorem ipsum dolor amet, 
+                    adipiscing elit. Maecenas eget tellus.<br><span>5 MINUTES AGO</span></li>
+                </ul>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-6">
+                <h4>CONNECT WITH US</h4>
+                <ul class="socialIcons">
+                    <li><a href="#"><img width="40" src="images/social/facebook.png" alt=""></a></li>
+                    <li><a href="#"><img width="40" src="images/social/twitter.png" alt=""></a></li>
+                    <li><a href="#"><img width="40" src="images/social/googleplus.png" alt=""></a></li>
+                    <li><a href="#"><img width="40" src="images/social/linkedin.png" alt=""></a></li>
+                </ul>
+            </div>
+        </div><!-- end row -->
+    </div><!-- end footer container -->
+</footer>
+
+<div class="bottomBar">
+    <div class="container">
+        <p>ISEARCHNYC.COM - COPYRIGHT 2015</p>
+       
+    </div>
+</div>
+
+<!-- JavaScript file links -->
+<script src="js/jquery.js"></script>			<!-- Jquery -->
+<script src="js/bootstrap.min.js"></script>  <!-- bootstrap 3.0 -->
+<script src="js/respond.js"></script>
+<script src="js/jquery.bxslider.min.js"></script>           <!-- bxslider -->
+<script src="js/tabs.js"></script>       <!-- tabs -->
+<script src="js/jquery.nouislider.min.js"></script>  <!-- price slider -->
+<script>
+//call bxslider for sub header section
+$(document).ready(function(){
+    $('.bxslider').bxSlider({
+        auto: true,
+        pager: false,
+        nextSelector: '.slider-next',
+        prevSelector: '.slider-prev',
+        nextText: '<img src="images/slider-next.png" alt="slider next" />',
+        prevText: '<img src="images/slider-prev.png" alt="slider prev" />'
+    });
+});
+</script>
+
+<script>
+//Setup price slider 
+var Link = $.noUiSlider.Link;
+
+$(".priceSlider").noUiSlider({
+     range: {
+      'min': 0,
+      'max': 800000
+    }
+    ,start: [150000, 550000]
+    ,step: 1000
+    ,margin: 100000
+    ,connect: true
+    ,direction: 'ltr'
+    ,orientation: 'horizontal'
+    ,behaviour: 'tap-drag'
+    ,serialization: {
+        lower: [
+            new Link({
+                target: $("#price-min")
+            })
+        ],
+
+        upper: [
+            new Link({
+                target: $("#price-max")
+            })
+        ],
+
+        format: {
+        // Set formatting
+            decimals: 0,
+            thousand: ',',
+            prefix: '$',
+            encoder: function( value ){
+                return value;
+            }
+        }
+    }
+});
+</script>
+
+</body>
+</html>
